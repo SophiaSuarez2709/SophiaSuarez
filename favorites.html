@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Favorites - Sophia Suarez</title>
+	<link rel="stylesheet" type="text/css" href="styleFavorites.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Bebas+Neue&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="sticky-header">
+	<nav>
+		<div class="logo">
+			<h1 id="logotxt">Sophia.</h1>
+		</div>
+
+		<div class="navigation">
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="favorites.html" class="active">Favorites</a></li>
+				<li><a href="cantlivewithout.html">"Can't Live Without"</a></li>
+				<li><a href="creations.html">Creations</a></li>
+			</ul>
+		</div>
+
+		<div class="burger-menu" onclick="toggleMenu()">
+			<div class="burger-line"></div>
+			<div class="burger-line"></div>
+			<div class="burger-line"></div>
+		</div>
+
+		<div class="header-social">
+			<a href="https://www.facebook.com/sophia.puay" target="_blank"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.instagram.com/soph.srz/" target="_blank"><i class="fab fa-instagram"></i></a>
+	</nav>
+</header>
+
+<section class="favorites-section">
+	<div class="favorites-container">
+		
+		<!-- Section Header -->
+		<div class="section-header">
+			<div class="subtitle-badge">
+				<span class="star">✦</span>
+				<span class="subtitle-text">THINGS I LOVE</span>
+				<span class="star">✦</span>
+			</div>
+			<h1 class="section-title">My Favorites</h1>
+			<div class="title-underline"></div>
+			<p class="section-intro">Pieces of art that understand parts of me I don't always show</p>
+		</div>
+
+		<!-- Songs Section -->
+		<div class="category-section">
+			<div class="category-header">
+				<div class="category-icon">
+					<i class="fas fa-music"></i>
+				</div>
+				<h2 class="category-title">Songs</h2>
+				<div class="category-line"></div>
+			</div>
+
+			<div class="items-grid">
+				<!-- Psychosocial -->
+				<div class="favorite-card song-card">
+					<div class="card-image">
+						<img src="https://i.scdn.co/image/ab67616d0000b273e7fbc0883149094912559f2c" alt="Psychosocial by Slipknot">
+						<div class="play-overlay">
+							<i class="fas fa-play-circle"></i>
+						</div>
+					</div>
+					<div class="card-content">
+						<h3 class="item-title">Psychosocial</h3>
+						<p class="item-creator">Slipknot</p>
+						<div class="mood-tags">
+							<span class="mood-tag">Fight</span>
+							<span class="mood-tag">Resist</span>
+						</div>
+						<p class="item-description">
+							The side of me that stands my ground, even when things feel overwhelming. It reminds me that I can question, resist, and still stay true to who I am.
+						</p>
+					</div>
+				</div>
+
+				<!-- Sulfur -->
+				<div class="favorite-card song-card">
+					<div class="card-image">
+						<img src="https://i.scdn.co/image/ab67616d0000b273457163bec7e8e4decf8c6375" alt="Sulfur by Slipknot">
+						<div class="play-overlay">
+							<i class="fas fa-play-circle"></i>
+						</div>
+					</div>
+					<div class="card-content">
+						<h3 class="item-title">Sulfur</h3>
+						<p class="item-creator">Slipknot</p>
+						<div class="mood-tags">
+							<span class="mood-tag">Feel</span>
+							<span class="mood-tag">Intensity</span>
+						</div>
+						<p class="item-description">
+							Speaks to the emotions I keep quiet, the intensity I carry, and the way I can be both soft and strong at the same time.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="category-quote">
+				<i class="fas fa-quote-left"></i>
+				<p>These songs feel like pieces of me—one that fights, one that feels, and somehow, they both make me feel seen.</p>
+			</div>
+		</div>
+
+		<!-- Movie Section -->
+		<div class="category-section">
+			<div class="category-header">
+				<div class="category-icon">
+					<i class="fas fa-film"></i>
+				</div>
+				<h2 class="category-title">Movie</h2>
+				<div class="category-line"></div>
+			</div>
+
+			<div class="featured-item">
+				<div class="featured-image">
+					<img src="https://m.media-amazon.com/images/M/MV5BNmVlZTY2ZGUtOTIzNi00N2E5LWI0YmItNjkyYTdjMjgwMDNjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Wild Child 2008">
+					<div class="year-badge">2008</div>
+				</div>
+				<div class="featured-content">
+					<h3 class="featured-title">Wild Child</h3>
+					<div class="featured-tags">
+						<span class="featured-tag">Growth</span>
+						<span class="featured-tag">Self-Discovery</span>
+						<span class="featured-tag">Friendship</span>
+					</div>
+					<p class="featured-description">
+						A journey of growth that I deeply connect with. At first, it shows a carefree and rebellious side, but as the story unfolds, it becomes clear that real strength comes from <strong>discipline</strong>, <strong>self-awareness</strong>, and <strong>meaningful relationships</strong>.
+					</p>
+					<p class="featured-description">
+						I love how the film balances fun and humor with important life lessons about <em>accountability</em>, <em>friendship</em>, and finding your true identity. It reminds me that even when we make mistakes, we can still change, grow, and become better versions of ourselves.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- TV Shows Section -->
+		<div class="category-section">
+			<div class="category-header">
+				<div class="category-icon">
+					<i class="fas fa-tv"></i>
+				</div>
+				<h2 class="category-title">TV Shows</h2>
+				<div class="category-line"></div>
+			</div>
+
+			<div class="items-grid duo-grid">
+				<!-- Victorious -->
+				<div class="favorite-card tv-card">
+					<div class="card-image">
+						<img src="https://m.media-amazon.com/images/M/MV5BMDhkZTA2YjAtODllYi00NDA1LThkNGYtMDAxY2I4ZTQ4NzU1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Victorious">
+					</div>
+					<div class="card-content">
+						<h3 class="item-title">Victorious</h3>
+						<div class="tv-badge">Nickelodeon</div>
+						<p class="item-description">
+							Fun and uplifting with humor, quirky characters, and lighthearted stories. Shows the importance of <strong>friendship</strong>, <strong>creativity</strong>, and embracing your unique personality.
+						</p>
+					</div>
+				</div>
+
+				<!-- Sam & Cat -->
+				<div class="favorite-card tv-card">
+					<div class="card-image">
+						<img src="https://m.media-amazon.com/images/M/MV5BYTRiNTFmMWItOWI3Ni00YWYwLThhZjAtYWI3MTU5N2E3Y2EzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Sam & Cat">
+					</div>
+					<div class="card-content">
+						<h3 class="item-title">Sam & Cat</h3>
+						<div class="tv-badge">Nickelodeon</div>
+						<p class="item-description">
+							Simply fun and uplifting! Easy to enjoy when I want to relax, while still showing the importance of friendship and embracing your unique personality.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Manhua/Manga Section -->
+		<div class="category-section">
+			<div class="category-header">
+				<div class="category-icon">
+					<i class="fas fa-book-open"></i>
+				</div>
+				<h2 class="category-title">Manhua & Anime</h2>
+				<div class="category-line"></div>
+			</div>
+
+			<div class="items-grid">
+				<!-- Kaguya-sama -->
+				<div class="favorite-card anime-card">
+					<div class="card-image">
+						<img src="https://m.media-amazon.com/images/M/MV5BMTM1ZWViNWMtZWY2ZC00YmYyLTk1ZGEtMzRjOWI2YTM1OTI3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Kaguya-sama: Love is War">
+						<div class="anime-overlay">
+							<i class="fas fa-heart"></i>
+						</div>
+					</div>
+					<div class="card-content">
+						<h3 class="item-title">Kaguya-sama: Love is War</h3>
+						<div class="anime-tags">
+							<span class="anime-tag">Mind Games</span>
+							<span class="anime-tag">Romance</span>
+							<span class="anime-tag">Strategy</span>
+						</div>
+						<p class="item-description">
+							The thrilling push-and-pull dynamic where every interaction feels like a clever mind game. I love how it turns even the smallest moment into a battle of pride and strategy, building up romance but intentionally delaying it—creating tension that keeps me hooked.
+						</p>
+					</div>
+				</div>
+
+				<!-- Kakegurui -->
+				<div class="favorite-card anime-card">
+					<div class="card-image">
+						<img src="https://m.media-amazon.com/images/I/617A1SNnP1L.jpg" alt="Kakegurui">
+						<div class="anime-overlay">
+							<i class="fas fa-dice"></i>
+						</div>
+					</div>
+					<div class="card-content">
+						<h3 class="item-title">Kakegurui</h3>
+						<div class="anime-tags">
+							<span class="anime-tag">High Stakes</span>
+							<span class="anime-tag">Psychological</span>
+							<span class="anime-tag">Thriller</span>
+						</div>
+						<p class="item-description">
+							The intense thrill of every high-stakes gamble and psychological twist. The unpredictability, bold personalities, and constant tension make every episode feel exciting. That adrenaline-like excitement through unique storytelling is what I live for.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Closing Quote -->
+		<div class="closing-section">
+			<div class="closing-quote">
+				<span class="quote-mark">"</span>
+				<p>All these favorites tell a story of who I am—<br>
+				<strong>the fighter, the dreamer, the performer, the strategist.</strong></p>
+				<span class="quote-mark">"</span>
+			</div>
+			<div class="closing-line"></div>
+		</div>
+
+	</div>
+</section>
+
+<script>
+	function toggleMenu() {
+		document.querySelector('.nav-links').classList.toggle('active');
+		document.querySelector('.burger-menu').classList.toggle('active');
+	}
+</script>
+
+</body>
+</html>

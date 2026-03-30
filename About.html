@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Me - Sophia Suarez</title>
+	<link rel="stylesheet" type="text/css" href="styleAbout.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Bebas+Neue&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="sticky-header">
+	<nav>
+		<div class="logo">
+			<h1 id="logotxt" style="font-family: poppins;">Sophia.</h1>
+		</div>
+
+		<div class="navigation">
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html" class="active">About Me</a></li>
+				<li><a href="favorites.html">Favorites</a></li>
+				<li><a href="cantlivewithout.html">"Can't Live Without"</a></li>
+				<li><a href="creations.html">Creations</a></li>
+			</ul>
+		</div>
+
+		<div class="burger-menu" onclick="toggleMenu()">
+			<div class="burger-line"></div>
+			<div class="burger-line"></div>
+			<div class="burger-line"></div>
+		</div>
+
+		<div class="header-social">
+			<a href="https://www.facebook.com/sophia.puay" target="_blank"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.instagram.com/soph.srz/" target="_blank"><i class="fab fa-instagram"></i></a>
+		</div>
+	</nav>
+</header>
+
+<section class="about-me-section">
+	<div class="about-me-container">
+		<!-- Left Side: Picture -->
+		<div class="about-me-left">
+			<div class="about-me-image">
+				<img src="images/sophia-about.jpg" alt="Sophia Suarez">
+			</div>
+		</div>
+
+		<!-- Right Side: All Content -->
+		<div class="about-me-right">
+			<!-- Header Section -->
+			<div class="about-header">
+				<div class="subtitle-badge">
+					<span class="star">✦</span>
+					<span class="subtitle-text">GET TO KNOW</span>
+					<span class="star">✦</span>
+				</div>
+				<h1 class="about-main-title">About Me</h1>
+				<div class="title-underline"></div>
+			</div>
+
+			<!-- Content Box -->
+			<div class="about-content-box">
+				<p class="about-text">
+					<span class="drop-cap">I</span> am <strong>Sophia Suarez</strong> of Mabini, Davao de Oro — often mistaken for a storm at first glance, until people discover I am, in truth, <em>sunlight with a playful edge</em>. I am laughter that lingers, a little mischievous, a little warm, the kind of presence that turns ordinary moments into something lighter. Though I am the youngest in my circles, I am often the one they come to in quiet hours—offering words, or simply silence, and finding joy in being a safe place for those I love.
+				</p>
+
+				<p class="about-text">
+					My life unfolds in many roles: an <strong>eldest daughter</strong>, an <strong>"ate,"</strong> a <strong>friend</strong>, a <strong>leader</strong>, a <strong>performer</strong>. I move where purpose calls—through <em>youth service</em>, <em>leadership spaces</em>, and the small, meaningful acts of giving, especially in the <strong>charity work</strong> my family holds close each year. The stage, too, is a home I return to, whether in <em>song, dance, or pageantry</em>—where passion finds its voice. And in all these, I am slowly, beautifully becoming someone I am proud of—<strong>piece by piece, purpose by purpose</strong>.
+				</p>
+			</div>
+
+			<!-- Quote Badge -->
+			<div class="quote-badge">
+				<i class="fas fa-sun"></i>
+				<span>"sunlight with a playful edge"</span>
+				<i class="fas fa-star"></i>
+			</div>
+
+			<!-- Mini Cards -->
+			<div class="mini-cards-container">
+				<div class="mini-card">
+					<div class="card-icon">
+						<i class="fas fa-hand-holding-heart"></i>
+					</div>
+					<h3 class="card-title">Eldest Daughter</h3>
+					<p class="card-subtitle">Anchor & gentle strength</p>
+				</div>
+
+				<div class="mini-card">
+					<div class="card-icon">
+						<i class="fas fa-microphone-alt"></i>
+					</div>
+					<h3 class="card-title">Performer</h3>
+					<p class="card-subtitle">Song, dance & pageantry</p>
+				</div>
+
+				<div class="mini-card">
+					<div class="card-icon">
+						<i class="fas fa-heart"></i>
+					</div>
+					<h3 class="card-title">Youth Servant</h3>
+					<p class="card-subtitle">Leadership & charity work</p>
+				</div>
+
+				<div class="mini-card">
+					<div class="card-icon">
+						<i class="fas fa-home"></i>
+					</div>
+					<h3 class="card-title">Safe Place</h3>
+					<p class="card-subtitle">For those I love</p>
+				</div>
+			</div>
+
+			<!-- Footer Quote -->
+			<div class="footer-quote">
+				<span class="sparkle">✨</span>
+				<em>becoming, piece by piece, purpose by purpose</em>
+				<span class="sparkle">✨</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	function toggleMenu() {
+		document.querySelector('.nav-links').classList.toggle('active');
+		document.querySelector('.burger-menu').classList.toggle('active');
+	}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All About Sophie</title>
+	<link rel="stylesheet" type="text/css" href="styleIndex.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Bebas+Neue&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="sticky-header">
+	<nav>
+		<div class="logo">
+			<h1 id="logotxt" style="font-family: poppins;">Sophia.</h1>
+		</div>
+
+		<div class="navigation">
+			<ul class="nav-links">
+				<li><a href="#" style="text-decoration: underline;">Home</a></li>
+				<li><a href="About.html">About Me</a></li>
+				<li><a href="favorites.html">Favorites</a></li>
+				<li><a href="cantlivewithout.html">"Can't Live Without"</a></li>
+				<li><a href="creations.html">Creations</a></li>
+			</ul>
+		</div>
+
+		<div class="burger-menu" onclick="toggleMenu()">
+			<div class="burger-line"></div>
+			<div class="burger-line"></div>
+			<div class="burger-line"></div>
+		</div>
+
+		<div class="header-social">
+			<a href="https://www.facebook.com/sophia.puay" target="_blank"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.instagram.com/soph.srz/" target="_blank"><i class="fab fa-instagram"></i></a>
+		</div>
+	</nav>
+</header>
+
+<section class="about-section">
+	<div class="about-content">
+		<h1 class="about-greeting">Hi, I'm</h1>
+		<h1 class="about-name">SOPHIA SUAREZ</h1>
+		<h2 class="about-title">BACHELOR OF SECONDARY EDUCATION (ENGLISH)</h2>
+		
+		<div class="about-divider"></div>
+		
+		<div class="about-buttons">
+			<a href="#" class="btn btn-first">View About Me</a>
+			<a href="#" class="btn btn-primary">View My Favorites</a>
+			<a href="#" class="btn btn-secondary">View "Can't Live Without"</a>
+			<a href="#" class="btn btn-third">View my Creations</a>
+		</div>
+	</div>
+</section>
+
+<script>
+	function toggleMenu() {
+		document.querySelector('.nav-links').classList.toggle('active');
+		document.querySelector('.burger-menu').classList.toggle('active');
+	}
+</script>
+
+</body>
+</html>

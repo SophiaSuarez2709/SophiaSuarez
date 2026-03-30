@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creations - Sophia Suarez</title>
+	<link rel="stylesheet" type="text/css" href="styleCreations.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Bebas+Neue&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="sticky-header">
+	<nav>
+		<div class="logo">
+			<h1 id="logotxt">Sophia.</h1>
+		</div>
+
+		<div class="navigation">
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="favorites.html">Favorites</a></li>
+				<li><a href="cantlivewithout.html">"Can't Live Without"</a></li>
+				<li><a href="creations.html" class="active">Creations</a></li>
+			</ul>
+		</div>
+
+		<div class="burger-menu" onclick="toggleMenu()">
+			<div class="burger-line"></div>
+			<div class="burger-line"></div>
+			<div class="burger-line"></div>
+		</div>
+
+		<div class="header-social">
+			<a href="https://www.facebook.com/berniericablanca.atacadorii.1" target="_blank"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.instagram.com/golden_wood909/" target="_blank"><i class="fab fa-instagram"></i></a>
+		</div>
+	</nav>
+</header>
+
+<section class="creations-section">
+	<div class="creations-container">
+		
+		<!-- Section Header -->
+		<div class="section-header">
+			<div class="subtitle-badge">
+				<span class="star">✦</span>
+				<span class="subtitle-text">MY LITERARY WORKS</span>
+				<span class="star">✦</span>
+			</div>
+			<h1 class="section-title">Creations</h1>
+			<div class="title-underline"></div>
+			<p class="section-intro">Words woven from heart, soul, and experience</p>
+		</div>
+
+		<!-- Filter Tabs -->
+		<div class="filter-tabs">
+			<button class="filter-btn active" data-filter="all">All Works</button>
+			<button class="filter-btn" data-filter="prose">Prose</button>
+			<button class="filter-btn" data-filter="poetry">Poetry</button>
+			<button class="filter-btn" data-filter="reflection">Reflection</button>
+		</div>
+
+		<!-- Creations Grid -->
+		<div class="creations-grid">
+
+			<!-- The Character That Never Existed -->
+			<div class="creation-card" data-category="prose" onclick="openModal('creation1')">
+				<div class="card-spine">
+					<div class="spine-line"></div>
+					<div class="spine-line"></div>
+					<div class="spine-line"></div>
+				</div>
+				<div class="card-content">
+					<div class="card-number">01</div>
+					<div class="card-category">Prose</div>
+					<h3 class="card-title">The Character That Never Existed</h3>
+					<p class="card-excerpt">"People do not see you, they invent you and accuse you..."</p>
+					<div class="card-tags">
+						<span class="tag">Identity</span>
+						<span class="tag">Truth</span>
+					</div>
+					<div class="read-hint">
+						<i class="fas fa-book-open"></i>
+						<span>Click to Read</span>
+					</div>
+				</div>
+				<div class="card-decoration">
+					<i class="fas fa-feather-alt"></i>
+				</div>
+			</div>
+
+			<!-- Inspired by Linkin Park -->
+			<div class="creation-card" data-category="reflection" onclick="openModal('creation2')">
+				<div class="card-spine">
+					<div class="spine-line"></div>
+					<div class="spine-line"></div>
+					<div class="spine-line"></div>
+				</div>
+				<div class="card-content">
+					<div class="card-number">02</div>
+					<div class="card-category">Reflection</div>
+					<h3 class="card-title">Given Up</h3>
+					<p class="card-subtitle">Inspired by Linkin Park</p>
+					<p class="card-excerpt">"Sometimes in life, the agony gets so bad..."</p>
+					<div class="card-tags">
+						<span class="tag">Perseverance</span>
+						<span class="tag">Hope</span>
+					</div>
+					<div class="read-hint">
+						<i class="fas fa-book-open"></i>
+						<span>Click to Read</span>
+					</div>
+				</div>
+				<div class="card-decoration">
+					<i class="fas fa-music"></i>
+				</div>
+			</div>
+
+			<!-- The Art of Taking Risk -->
+			<div class="creation-card" data-category="prose" onclick="openModal('creation3')">
+				<div class="card-spine">
+					<div class="spine-line"></div>
+					<div class="spine-line"></div>
+					<div class="spine-line"></div>
+				</div>
+				<div class="card-content">
+					<div class="card-number">03</div>
+					<div class="card-category">Prose</div>
+					<h3 class="card-title">The Art of Taking Risk</h3>
+					<p class="card-excerpt">"In life, everything you planned is not guaranteed..."</p>
+					<div class="card-tags">
+						<span class="tag">Growth</span>
+						<span class="tag">Courage</span>
+					</div>
+					<div class="read-hint">
+						<i class="fas fa-book-open"></i>
+						<span>Click to Read</span>
+					</div>
+				</div>
+				<div class="card-decoration">
+					<i class="fas fa-mountain"></i>
+				</div>
+			</div>
+
+			<!-- The Seed -->
+			<div class="creation-card" data-category="prose" onclick="openModal('creation4')">
+				<div class="card-spine">
+					<div class="spine-line"></div>
+					<div class="spine-line"></div>
+					<div class="spine-line"></div>
+				</div>
+				<div class="card-content">
+					<div class="card-number">04</div>
+					<div class="card-category">Prose</div>
+					<h3 class="card-title">The Seed</h3>
+					<p class="card-excerpt">"If I were to choose one physical thing that describes me..."</p>
+					<div class="card-tags">
+						<span class="tag">Teaching</span>
+						<span class="tag">Growth</span>
+					</div>
+					<div class="read-hint">
+						<i class="fas fa-book-open"></i>
+						<span>Click to Read</span>
+					</div>
+				</div>
+				<div class="card-decoration">
+					<i class="fas fa-seedling"></i>
+				</div>
+			</div>
+
+			<!-- The Day My World Paused -->
+			<div class="creation-card" data-category="prose" onclick="openModal('creation5')">
+				<div class="card-spine">
+					<div class="spine-line"></div>
+					<div class="spine-line"></div>
+					<div class="spine-line"></div>
+				</div>
+				<div class="card-content">
+					<div class="card-number">05</div>
+					<div class="card-category">Prose</div>
+					<h3 class="card-title">The Day My World Paused</h3>
+					<p class="card-excerpt">"I just saw him—and that was all it took..."</p>
+					<div class="card-tags">
+						<span class="tag">Crush</span>
+						<span class="tag">Butterflies</span>
+					</div>
+					<div class="read-hint">
+						<i class="fas fa-book-open"></i>
+						<span>Click to Read</span>
+					</div>
+				</div>
+				<div class="card-decoration">
+					<i class="fas fa-heart"></i>
+				</div>
+			</div>
+
+			<!-- When Love Becomes Safe -->
+			<div class="creation-card" data-category="reflection" onclick="openModal('creation6')">
+				<div class="card-spine">
+					<div class="spine-line"></div>
+					<div class="spine-line"></div>
+					<div class="spine-line"></div>
+				</div>
+				<div class="card-content">
+					<div class="card-number">06</div>
+					<div class="card-category">Reflection</div>
+					<h3 class="card-title">When Love Becomes Safe</h3>
+					<p class="card-excerpt">"As I stared at the ceiling, it somehow sparked many memories..."</p>
+					<div class="card-tags">
+						<span class="tag">Love</span>
+						<span class="tag">Self-Worth</span>
+					</div>
+					<div class="read-hint">
+						<i class="fas fa-book-open"></i>
+						<span>Click to Read</span>
+					</div>
+				</div>
+				<div class="card-decoration">
+					<i class="fas fa-shield-heart"></i>
+				</div>
+			</div>
+
+			<!-- Nowhere -->
+			<div class="creation-card" data-category="prose" onclick="openModal('creation7')">
+				<div class="card-spine">
+					<div class="spine-line"></div>
+					<div class="spine-line"></div>
+					<div class="spine-line"></div>
+				</div>
+				<div class="card-content">
+					<div class="card-number">07</div>
+					<div class="card-category">Prose</div>
+					<h3 class="card-title">Nowhere</h3>
+					<p class="card-excerpt">"Lately, I've been sitting in the middle of two truths..."</p>
+					<div class="card-tags">
+						<span class="tag">Uncertainty</span>
+						<span class="tag">Introspection</span>
+					</div>
+					<div class="read-hint">
+						<i class="fas fa-book-open"></i>
+						<span>Click to Read</span>
+					</div>
+				</div>
+				<div class="card-decoration">
+					<i class="fas fa-compass"></i>
+				</div>
+			</div>
+
+			<!-- In the Stillness -->
+			<div class="creation-card" data-category="prose" onclick="openModal('creation8')">
+				<div class="card-spine">
+					<div class="spine-line"></div>
+					<div class="spine-line"></div>
+					<div class="spine-line"></div>
+				</div>
+				<div class="card-content">
+					<div class="card-number">08</div>
+					<div class="card-category">Prose</div>
+					<h3 class="card-title">In the Stillness</h3>
+					<p class="card-excerpt">"The small certainty lived a tender anticipation..."</p>
+					<div class="card-tags">
+						<span class="tag">Waiting</span>
+						<span class="tag">Longing</span>
+					</div>
+					<div class="read-hint">
+						<i class="fas fa-book-open"></i>
+						<span>Click to Read</span>
+					</div>
+				</div>
+				<div class="card-decoration">
+					<i class="fas fa-moon"></i>
+				</div>
+			</div>
+
+			<!-- Resentment, Unspoken -->
+			<div class="creation-card" data-category="prose" onclick="openModal('creation9')">
+				<div class="card-spine">
+					<div class="spine-line"></div>
+					<div class="spine-line"></div>
+					<div class="spine-line"></div>
+				</div>
+				<div class="card-content">
+					<div class="card-number">09</div>
+					<div class="card-category">Prose</div>
+					<h3 class="card-title">Resentment, Unspoken</h3>
+					<p class="card-excerpt">"As you grow older, especially in your final year as a teenager..."</p>
+					<div class="card-tags">
+						<span class="tag">Pain</span>
+						<span class="tag">Darkness</span>
+					</div>
+					<div class="read-hint">
+						<i class="fas fa-book-open"></i>
+						<span>Click to Read</span>
+					</div>
+				</div>
+				<div class="card-decoration">
+					<i class="fas fa-cloud-rain"></i>
+				</div>
+			</div>
+
+			<!-- After Forever -->
+			<div class="creation-card poetry-card" data-category="poetry" onclick="openModal('creation10')">
+				<div class="card-spine">
+					<div class="spine-line"></div>
+					<div class="spine-line"></div>
+					<div class="spine-line"></div>
+				</div>
+				<div class="card-content">
+					<div class="card-number">10</div>
+					<div class="card-category">Poetry</div>
+					<h3 class="card-title">After Forever</h3>
+					<p class="card-excerpt">"her name must have sounded like home..."</p>
+					<div class="card-tags">
+						<span class="tag">Ghost</span>
+						<span class="tag">Second</span>
+					</div>
+					<div class="read-hint">
+						<i class="fas fa-book-open"></i>
+						<span>Click to Read</span>
+					</div>
+				</div>
+				<div class="card-decoration">
+					<i class="fas fa-ghost"></i>
+				</div>
+			</div>
+
+			<!-- Unnoticed -->
+			<div class="creation-card poetry-card" data-category="poetry" onclick="openModal('creation11')">
+				<div class="card-spine">
+					<div class="spine-line"></div>
+					<div class="spine-line"></div>
+					<div class="spine-line"></div>
+				</div>
+				<div class="card-content">
+					<div class="card-number">11</div>
+					<div class="card-category">Poetry</div>
+					<h3 class="card-title">Unnoticed</h3>
+					<p class="card-excerpt">"how can i compete when she already won..."</p>
+					<div class="card-tags">
+						<span class="tag">Invisible</span>
+						<span class="tag">Longing</span>
+					</div>
+					<div class="read-hint">
+						<i class="fas fa-book-open"></i>
+						<span>Click to Read</span>
+					</div>
+				</div>
+				<div class="card-decoration">
+					<i class="fas fa-eye-slash"></i>
+				</div>
+			</div>
+
+			<!-- It Stung -->
+			<div class="creation-card poetry-card" data-category="poetry" onclick="openModal('creation12')">
+				<div class="card-spine">
+					<div class="spine-line"></div>
+					<div class="spine-line"></div>
+					<div class="spine-line"></div>
+				</div>
+				<div class="card-content">
+					<div class="card-number">12</div>
+					<div class="card-category">Poetry</div>
+					<h3 class="card-title">It Stung</h3>
+					<p class="card-excerpt">"It stung— softly, like the brush of salt..."</p>
+					<div class="card-tags">
+						<span class="tag">Pain</span>
+						<span class="tag">Comparison</span>
+					</div>
+					<div class="read-hint">
+						<i class="fas fa-book-open"></i>
+						<span>Click to Read</span>
+					</div>
+				</div>
+				<div class="card-decoration">
+					<i class="fas fa-droplet"></i>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Stats Section -->
+		<div class="creations-stats">
+			<div class="stat-item">
+				<span class="stat-number">12</span>
+				<span class="stat-label">Works</span>
+			</div>
+			<div class="stat-item">
+				<span class="stat-number">4</span>
+				<span class="stat-label">Prose</span>
+			</div>
+			<div class="stat-item">
+				<span class="stat-number">3</span>
+				<span class="stat-label">Poetry</span>
+			</div>
+			<div class="stat-item">
+				<span class="stat-number">2</span>
+				<span class="stat-label">Reflection</span>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<!-- Modal Overlay -->
+<div id="modalOverlay" class="modal-overlay" onclick="closeModal(event)">
+	<div class="modal-content" onclick="event.stopPropagation()">
+		<button class="modal-close" onclick="closeModal()">
+			<i class="fas fa-times"></i>
+		</button>
+		<div class="modal-header">
+			<div class="modal-category" id="modalCategory">Category</div>
+			<h2 class="modal-title" id="modalTitle">Title</h2>
+			<div class="modal-subtitle" id="modalSubtitle"></div>
+		</div>
+		<div class="modal-body" id="modalBody">
+			<!-- Content will be inserted here -->
+		</div>
+		<div class="modal-footer">
+			<button class="modal-nav prev" onclick="navigateModal(-1)">
+				<i class="fas fa-chevron-left"></i> Previous
+			</button>
+			<span class="modal-counter" id="modalCounter">1 / 12</span>
+			<button class="modal-nav next" onclick="navigateModal(1)">
+				Next <i class="fas fa-chevron-right"></i>
+			</button>
+		</div>
+	</div>
+</div>
+
+<script>
+	// Modal Data
+	const creationsData = {
+		creation1: {
+			category: "Prose",
+			title: "The Character That Never Existed",
+			subtitle: "",
+			content: `<p>There are moments in life when the truth becomes a quiet whisper drowned out by the noise of assumptions, lies, and judgments. One of the most painful experiences is being misunderstood, especially by the very person you trusted most. The quote, "People do not see you, they invent you and accuse you," resonates deeply with me—not just as words, but as a lived reality. It reflects the agony of being falsely accused of something I never did.</p>
+			<p>When someone chooses to see you through the lens of their insecurities or the stories others whisper into their ears, your truth becomes irrelevant. It no longer matters how loyal you've been, how much you've loved, or how deeply you've committed. What matters is the version of you they've created in their minds—a distorted image shaped by fear, jealousy, or misinformation.</p>
+			<p>I communicated, I cared, and I remained faithful. But all that was dismissed in favor of a narrative that painted me as a villain. Suddenly, I was no longer the person they knew, but a character in a story I didn't write. And no matter how loudly I tried to speak my truth, it was silenced
